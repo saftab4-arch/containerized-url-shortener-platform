@@ -66,5 +66,5 @@ jobs:
           context: ./app
           push: true
           tags: |
-            saftab4/project05-url-shortener:latest
-            saftab4/project05-url-shortener:${{ github.sha }}
+            syedaftab04/project05-url-shortener:latest
+            syedaftab04/project05-url-shortener:${{ github.sha }}
