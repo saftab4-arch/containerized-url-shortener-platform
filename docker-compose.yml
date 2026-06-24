@@ -1,7 +1,7 @@
 services:
 
   url-app:
-    build: ./app
+    image: syedaftab04/project05-url-shortener:latest 
     container_name: url-app
     env_file:
       - .env
