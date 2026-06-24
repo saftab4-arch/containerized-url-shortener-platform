@@ -2,7 +2,6 @@ services:
 
   url-app:
     image: syedaftab04/project05-url-shortener:latest 
-    container_name: url-app
     env_file:
       - .env
     depends_on:
@@ -13,7 +12,6 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: nginx
     ports:
       - "80:80"
     volumes:
@@ -25,13 +23,11 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: redis
     networks:
       - backend
 
   db:
     image: postgres:16-alpine
-    container_name: postgres
     restart: always
     env_file:
       - .env
