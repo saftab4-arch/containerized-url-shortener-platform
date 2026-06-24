@@ -13,7 +13,7 @@ def test_home_endpoint():
     assert response.status_code == 200
     data = response.get_json()
     assert data["service"] == "Containerized URL Shortener Platform"
-    assert data["version"] == "v1"
+    assert data["version"] == "v2-watchtower"
 
 
 def test_health_endpoint():
