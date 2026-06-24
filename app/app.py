@@ -55,7 +55,7 @@ def home():
     return jsonify(
         {
             "service": "Containerized URL Shortener Platform",
-            "version": "v1",
+            "version": "v2-watchtower",
             "endpoints": {
                 "health": "/health",
                 "shorten": "POST /shorten",
